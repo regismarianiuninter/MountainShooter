@@ -1,18 +1,8 @@
-import pygame
+from code import game
+from code.game import Game
 
-print('Setup Start')
-pygame.init()
-window = pygame.display.set_mode(size=(600, 480))
-print('Setup End')
-
-print('Loop Start')
-while True:
-    # Check for all events
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            pygame.quit()  # Close Window
-            quit()  # end pygame
-
+game = Game()
+game.run()
 # # 2A - Definir classe Cat e instanciar o seu objeto no main
 # class Dog:
 #     def __init__(self):
